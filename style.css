@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Domine');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 20px;
+    font-family: 'Domine', serif;
+}
+
+body {
+    background: #232323;
+    color: #Fff;
+}
+
+.search-field {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+input.search-term {
+    width: 100%;
+    padding: .6rem 1.5rem .5rem;
+    font-size: 1.2rem;
+    background: #eee;
+    border: solid .3rem cornflowerblue;
+    outline: none;
+}
+    input.search-term::placeholder {
+        font-size: 1.2rem;
+    }
+
+button {
+    padding: .6rem 1.5rem .5rem;
+    background: cornflowerblue;
+    color: #fff;
+    font-size: 1.2rem;
+    outline: none;
+    border: solid .3rem cornflowerblue;
+    cursor: pointer;
+}
+
+.movie-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 5%;
+}
+
+.poster {
+    width: 30%;
+    min-width: 10rem;
+    height: auto;
+    margin: 1rem 3rem;
+}
+
+.movie-details {
+    width: 80%;
+    padding: 1rem;
+}
+
+.actors {
+    font-size: .8rem;
+    color: #ccc;
+}
+
+.title {
+    font-size: 3rem;
+    margin: .5rem 0;
+}
+
+.genre {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin: 1rem 0;
+}
+
+.plot {
+    margin: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.detail {
+    font-size: .8rem;
+    color: cornflowerblue;  
+    margin: .5rem 0;  
+}
+
+.imdb-rating, .awards {
+    margin: .5rem 0;
+    font-size: .8rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    html {
+        font-size: 12px;
+    }
+    .movie-info {
+        flex-direction: column;
+        margin: 1rem 2%;
+    }
+    .poster {
+        width: 60%;
+        min-width: 10rem;
+        height: auto;
+        margin: 1rem;
+    }
+    
+    .movie-details {
+        padding: 1rem 2rem;
+        width: 100%;
+        border-top: solid 1px #fff;
+        border-bottom: solid 1px #fff;
+    }
+}
