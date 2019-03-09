@@ -1,6 +1,6 @@
+let searchForm = document.querySelector('#search-form');
 let movieInfo = document.querySelector('.movie-info');
 let searchTerm = document.querySelector('.search-term');
-const searchBtn = document.querySelector('.search-btn');
 
 let poster = document.querySelector('.poster');
 let title = document.querySelector('.title');
@@ -13,7 +13,8 @@ let plot = document.querySelector('.plot');
 let imdbRating = document.querySelector('.imdb-rating');
 let awards = document.querySelector('.awards');
 
-searchBtn.addEventListener('click', () => {
+searchForm.addEventListener('submit', e => {
+    e.preventDefault();
 
     let searchValue = searchTerm.value;
 
